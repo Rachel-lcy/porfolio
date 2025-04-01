@@ -1,0 +1,18 @@
+# Rachel's Portfolio Website!
+
+## 1. Emerging Trends
+
+- Web Crypto API
+
+## Learning Resources
+
+- [Web Crypto API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API)
+- [TextEncoder: encode() method](https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder/encode)
+- [Generate Key](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/generateKey)
+
+## Extended Knowledge
+
+- AES-GCM is a widely used symmetric encryption algorithm that provides both confidentiality and data integrity verification.
+- `crypto.subtle` is the built-in cryptography module in browsers, running ar a low level on the client side.It is efficient and secure.
+- The `generateKey()`method is asynchronous, so i need to use `await` or `then()` when calling it!
+- IV（Initialization Vector）is typically a cryptographically secure random value used to initialize the symmetric encryption process. It ensure the uniqueness and security of the encryption result.

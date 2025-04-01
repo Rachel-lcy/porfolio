@@ -334,7 +334,7 @@
       onclick="location.href='./#contact'"
     />
   </section>
-  <section id="contact">
+  <!-- <section id="contact">
     <p class="section__text__p1">Get in Touch</p>
     <h1 class="title">Contact Me</h1>
     <div class="contact-info-upper-container">
@@ -355,7 +355,34 @@
         <p><a href="https://www.linkedin.com">LinkedIn</a></p>
       </div>
     </div>
+  </section> -->
+  <!-- Encrypted Contact Me -->
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+
+    <div class="contact-container">
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <img src="./assets/email.png" class="icon contact-icon" />
+          <p><a href="https://mail.google.com/mail/u/0/#inbox">hurui.lcy@gmail.com</a></p>
+        </div>
+        <div class="contact-item">
+          <img src="./assets/linkedin.png" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+
+      <div class="secure-message">
+        <h3>💬 Leave a Secure Message 💬</h3>
+        <textarea id="message" placeholder="Type your message here..."></textarea>
+        <button class="btn btn-color-1" onclick="encryptMessage()">Encrypt Message</button>
+        <p id="encrypted-result"></p>
+      </div>
+    </div>
   </section>
+
   <footer>
     <nav>
       <div class="nav-links-container">

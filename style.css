@@ -359,6 +359,7 @@ article .icon {
 
 #projects {
   position: relative;
+  margin-bottom: 6rem;
 }
 
 .color-container {
@@ -382,45 +383,6 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/* CONTACT */
-
-#contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 70vh;
-}
-
-.contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
-}
-
-.contact-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
-}
-
-.contact-info-container p {
-  font-size: larger;
-}
-
-.contact-icon {
-  cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
-}
 
 /* FOOTER SECTION */
 
@@ -431,4 +393,54 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* Contact SECTION */
+
+.contact-container {
+  background: #fff;
+  padding: 5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 1rem auto;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.secure-message {
+  text-align: center;
+}
+
+.secure-message textarea {
+  width: 600px;
+  height: 100px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(163, 163, 163);
+  resize: none;
+  margin: 2rem 0;
+}
+
+.secure-message button {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 50%;
+}
+
+#encrypted-result {
+  color: green;
+  word-break: break-word;
 }
