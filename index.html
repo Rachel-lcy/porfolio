@@ -22,7 +22,7 @@
   </nav>
 
   <nav id="hamburger-nav">
-    <div class="logo">Rachel Hu</div>
+    <h1 class="logo">Rachel Hu</h1>
     <div class="hamburger-menu">
       <div class="hamburger-icon" onclick="toggleMenu()">
          <span></span>
@@ -43,9 +43,9 @@
       <img src="./assets/Circle-Rachel-pic.png" alt="Rachel Hu profile picture">
     </div>
     <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Rachel Hu</h1>
-      <p class="section__text__p2">Frontend Developer</p>
+      <p class="section__text__p1 rainbow-text">Hello, I'm</p>
+      <h1 class="title rainbow-text">Rachel Hu</h1>
+      <p class="section__text__p2 rainbow-text">Frontend Developer</p>
       <div class="btn-container">
         <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
         <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
@@ -232,7 +232,7 @@
                 class="icon"
               />
               <div>
-                <h3>Python</h3>
+                <h3>MongoDB</h3>
                 <p>Intermediate</p>
               </div>
             </article>
@@ -248,11 +248,35 @@
     />
   </section>
 
-  <section id="projects">
+  <!-- <section id="projects">
     <p class="section__text__p1">Browse My Recent</p>
     <h1 class="title">Projects</h1>
     <div class="experience-details-container">
       <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/travelblog.png"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Travel Blog Website</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Rachel-lcy'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://travel-blog-website-six.vercel.app/'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
         <div class="details-container color-container">
           <div class="article-container">
             <img
@@ -333,7 +357,64 @@
       class="icon arrow"
       onclick="location.href='./#contact'"
     />
+  </section> -->
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'"
+  />
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="./assets/travelblog.png" alt="Travel Blog" class="project-img" />
+        <h2>Travel Blog Website</h2>
+        <p class="project-description">A responsive travel blog website built with HTML, CSS, and JavaScript. Users can browse beautiful places and travel tips.</p>
+        <p class="tech-stack"><b>Tech Stack:</b> HTML, CSS, JS</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="location.href='https://github.com/Rachel-lcy'">Github</button>
+          <button class="btn btn-color-2" onclick="location.href='https://travel-blog-website-six.vercel.app/'">Live Demo</button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="./assets/littlelemonrestaurant.png" alt="Restaurant Website" class="project-img" />
+        <h2>Restaurant Website</h2>
+        <p class="project-description">An online menu website for Little Lemon Restaurant. Includes reservation feature and interactive UI.</p>
+        <p class="tech-stack"><b>Tech Stack:</b> React.js, HTML, JS, CSS</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="location.href='https://github.com/Rachel-lcy'">Github</button>
+          <button class="btn btn-color-2" onclick="location.href='#'">Live Demo</button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="./assets/peakpets.png" alt="Peak Pets" class="project-img" />
+        <h2>Peak Pets Website</h2>
+        <p class="project-description">Pet care service website providing in-home pet sitting and booking system.</p>
+        <p class="tech-stack"><b>Tech Stack:</b> React.js, Next.js, TailWindCSS, CMS</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="location.href='https://github.com/Rachel-lcy'">Github</button>
+          <button class="btn btn-color-2" onclick="location.href='https://pets-website-steel.vercel.app/'">Live Demo</button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="./assets/peakpets.png" alt="Peak Pets" class="project-img" />
+        <h2>Peak Pets Website</h2>
+        <p class="project-description">Pet care service website providing in-home pet sitting and booking system.</p>
+        <p class="tech-stack"><b>Tech Stack:</b> Node.js, Express.js, MongoDB, EJS</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="location.href='https://github.com/Rachel-lcy'">Github</button>
+          <button class="btn btn-color-2" onclick="location.href='https://pets-website-steel.vercel.app/'">Live Demo</button>
+        </div>
+      </div>
+    </div>
   </section>
+
+
   <!-- <section id="contact">
     <p class="section__text__p1">Get in Touch</p>
     <h1 class="title">Contact Me</h1>
