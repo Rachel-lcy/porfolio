@@ -360,33 +360,6 @@ article .icon {
 
 /* PROJECTS SECTION */
 
-
-/* #projects {
-  position: relative;
-  margin-bottom: 6rem;
-}
-
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-}
-
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
-}
-
-.project-title {
-  margin: 1rem;
-  color: black;
-}
-
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-} */
-
 .projects-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -489,6 +462,38 @@ footer p {
   text-align: center;
 }
 
+/* Web Speech API */
+#mic-container {
+  position: sticky;
+  bottom: 60px;
+  right: 20px;
+  text-align: center;
+}
+
+#mic-container button {
+  background: black;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+#mic-container button:hover {
+  background: #302d2d;
+}
+#mic-instruction {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: gray;
+}
+#mic-result {
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  color: #555;
+}
 /* Rainbow Effect */
 .rainbow-text {
   /* Create a conic gradient. */

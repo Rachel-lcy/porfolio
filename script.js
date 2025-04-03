@@ -1,3 +1,5 @@
+/* web crypto API */
+
 async function encryptMessage() {
   const message = document.getElementById("message").value;
   if (!message) {
@@ -36,3 +38,7 @@ async function encryptMessage() {
   document.getElementById("encrypted-result").innerText =
     "🔐 Encrypted Message: " + encryptedBase64;
 }
+/* Web Speech API */
+const micBtn = document.getElementById('mic-btn');
+const instruction = document.getElementById('mic-instruction');
+const result = document.getElementById('mic-result');
