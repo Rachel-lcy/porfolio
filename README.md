@@ -15,7 +15,15 @@
 - The `generateKey()`method is asynchronous, so i need to use `await` or `then()` when calling it!
 - IV（Initialization Vector）is typically a cryptographically secure random value used to initialize the symmetric encryption process. It ensure the uniqueness and security of the encryption result.
 
-## 2. Emerging Trends - Web Crypto API
+## 2. Emerging Trends - Web Speech API
+
+## User Goals
+
+- Quickly understand who you are – Learn about your background and skills
+- View projects – Explore your recent work or case studies
+- Find contact information – Reach out to you via email or social media
+- Download resume – Review your qualifications in detail
+- Read blog – See your thoughts, tutorials, or insights
 
 ## Learning Resources
 

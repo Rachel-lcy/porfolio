@@ -464,7 +464,7 @@ footer p {
 
 /* Web Speech API */
 #mic-container {
-  position: sticky;
+  position: fixed;
   bottom: 60px;
   right: 20px;
   text-align: center;
@@ -473,10 +473,10 @@ footer p {
 #mic-container button {
   background: black;
   color: white;
-  padding: 1rem 2rem;
+  padding: 0.8rem 0.8rem;
   border: none;
   border-radius: 50px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   transition: background 0.3s ease;
