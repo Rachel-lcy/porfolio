@@ -79,7 +79,7 @@ if (SpeechRecognition) {
       window.open('https://nodejs-blog-c5o4.onrender.com/', '_blank');
     } else if (transcript.includes('resume') || transcript.includes('cv')) {
       window.open('./assets/resume-example.pdf', '_blank');
-    } else if (transcript.includes('travel blog')) {
+    } else if (transcript.includes('travel blog website')) {
       window.open('https://travel-blog-website-six.vercel.app/', '_blank');
     } else if (transcript.includes('restaurant')) {
       window.open('https://github.com/Rachel-lcy', '_blank');
