@@ -66,3 +66,13 @@
 
 - [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
 - [Google Web Speech API Demonstration](https://www.google.com/intl/en/chrome/demos/speech.html)
+
+## Future Improvements
+
+- Add decryption feature to complement encryption
+- Add visual feedback animation when voice command triggers scroll
+- How to use the encrypted messages in real projects
+
+## Problem Noted
+
+- Voice recognition may not work properly in incognito mode or without microphone permission
