@@ -229,7 +229,14 @@ section {
   justify-content: center;
   gap: 1rem;
 }
-
+.detail-button{
+  margin-top: 16px;
+}
+.detail-btn{
+  padding: 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+}
 .btn {
   font-weight: 600;
   transition: all 300ms ease;
@@ -506,15 +513,15 @@ footer p {
   background: #CA4246;
   background-color: #CA4246;
   background: conic-gradient(
-    #CA4246 16.666%, 
-    #E16541 16.666%, 
-    #E16541 33.333%, 
-    #F18F43 33.333%, 
-    #F18F43 50%, 
-    #8B9862 50%, 
-    #8B9862 66.666%, 
-    #476098 66.666%, 
-    #476098 83.333%, 
+    #CA4246 16.666%,
+    #E16541 16.666%,
+    #E16541 33.333%,
+    #F18F43 33.333%,
+    #F18F43 50%,
+    #8B9862 50%,
+    #8B9862 66.666%,
+    #476098 66.666%,
+    #476098 83.333%,
     #A7489B 83.333%);
 
   /* Set thee background size and repeat properties. */
@@ -524,7 +531,7 @@ footer p {
   /* Use the text as a mask for the background. */
   /* This will show the gradient as a text color rather than element bg. */
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
 
   /* Animate the text when loading the element. */
   /* This animates it on page load and when hovering out. */
