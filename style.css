@@ -228,10 +228,9 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-bottom: 16px;
 }
-.detail-button{
-  margin-top: 16px;
-}
+
 .detail-btn{
   padding: 1rem;
   font-weight: 600;
