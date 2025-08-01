@@ -190,6 +190,7 @@
 }
 
 @media (min-width: 768px) {
-  #desktop-nav { display: flex; align-items: center; justify-content: space-between; }
-  #hamburger-nav { display: none; }
+  #hamburger-nav {
+    display: none;
+  }
 }

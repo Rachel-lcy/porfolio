@@ -1,7 +1,6 @@
-
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('#nav-toggle');
-  const menu = document.querySelector('#hamburger-nav .menu-links');
+  const menu = document.querySelector('.menu-links');
 
   if (toggle && menu) {
     const toggleMenu = () => {
@@ -13,13 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
       toggle.classList.toggle('open', !isOpen);
     };
 
-
     toggle.addEventListener('click', toggleMenu);
-    menu.addEventListener('click', (e) => {
-      if (e.target.closest('a')) toggleMenu();
+
+
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        toggleMenu();
+      });
     });
   }
 });
+
 
 
 async function encryptMessage() {
