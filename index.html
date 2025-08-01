@@ -9,35 +9,32 @@
 </head>
 
 <body>
+  <!-- Desktop -->
   <nav id="desktop-nav">
     <div class="logo">Rachel Hu</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="https://nodejs-blog-c5o4.onrender.com/" id="blog">Blog</a></li>
-      </ul>
-    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://nodejs-blog-c5o4.onrender.com/" target="_blank" rel="noopener">Blog</a></li>
+    </ul>
   </nav>
 
+<!-- Mobile -->
   <nav id="hamburger-nav">
-    <h1 class="logo">Rachel Hu</h1>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-         <span></span>
-         <span></span>
-         <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
-      </div>
-    </div>
+  <h1 class="logo">Rachel Hu</h1>
+  <button id="nav-toggle" class="hamburger-icon" type="button" aria-expanded="false" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <ul class="menu-links" data-state="closed" aria-hidden="true">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://nodejs-blog-c5o4.onrender.com/" target="_blank" rel="noopener">Blog</a></li>
+  </ul>
   </nav>
 
   <section id="profile">
@@ -269,8 +266,8 @@
     <div class="project-card">
       <img src="./assets/peakpets.png" alt="Peak Pets" class="project-img" />
       <h2>Peak Pets Website</h2>
-      <p class="project-description">Pet care service website providing in-home pet sitting,booking system and online store.</p>
-      <p class="tech-stack"><b>Tech Stack:</b> React.js, Next.js, TailWindCSS, CMS</p>
+      <p class="project-description">Pets care service website providing in-home pets sitting,booking system and online store.</p>
+      <p class="tech-stack"><b>Tools Used:</b> React.js, Next.js, TailWindCSS, CMS</p>
       <div class="btn-container">
         <a class="btn btn-color-2" href="https://github.com/Rachel-lcy/pets-website" target="_blank" rel="noopener noreferrer">Github</a>
         <a class="btn btn-color-2" href="https://pets-website-steel.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
@@ -285,7 +282,7 @@
       <img src="./assets/littlelemonrestaurant.png" alt="Restaurant Website" class="project-img" />
       <h2>Restaurant Website</h2>
       <p class="project-description">An online menu website for Little Lemon Restaurant. Includes reservation feature and interactive UI.</p>
-      <p class="tech-stack"><b>Tech Stack:</b> React.js, HTML, JS, CSS</p>
+      <p class="tech-stack"><b>Tools Used:</b> React.js, HTML, JS, CSS, Figma, Clerk</p>
       <div class="btn-container">
         <a class="btn btn-color-2" href="https://github.com/Rachel-lcy/Little-Lemon-Restaurant" target="_blank" rel="noopener noreferrer">Github</a>
         <a class="btn btn-color-2" href="https://react-restaurant-project-o57q7xce3-rachels-projects-96310063.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
@@ -301,7 +298,7 @@
       <h2>Rachel's Digital Blog</h2>
       <p class="project-description">Discover tech tutorials, coding projects, and creative ideas.
       I share my journey as a web developer, along with practical tips and insights about coding, design, and digital life.</p>
-      <p class="tech-stack"><b>Tech Stack:</b> Node.js, Express.js, MongoDB, EJS</p>
+      <p class="tech-stack"><b>Tools Used:</b> Node.js, Express.js, MongoDB, EJS</p>
       <div class="btn-container">
         <a class="btn btn-color-2" href="https://github.com/Rachel-lcy/nodejs-blog" target="_blank" rel="noopener noreferrer">Github</a>
         <a class="btn btn-color-2" href="https://nodejs-blog-c5o4.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo</a>
@@ -316,7 +313,7 @@
       <img src="./assets/travelblog.png" alt="Travel Blog" class="project-img" />
       <h2>Travel Blog Website</h2>
       <p class="project-description">A responsive travel blog website built with HTML, CSS, and JavaScript. Users can browse beautiful places and travel tips.</p>
-      <p class="tech-stack"><b>Tech Stack:</b> HTML, CSS, JS</p>
+      <p class="tech-stack"><b>Tools Used:</b> HTML, CSS, JS</p>
       <div class="btn-container">
         <a class="btn btn-color-2" href="https://github.com/Rachel-lcy/travel-blog-website" target="_blank" rel="noopener noreferrer">Github</a>
         <a class="btn btn-color-2" href="https://travel-blog-website-six.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>

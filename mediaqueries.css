@@ -1,4 +1,4 @@
-/* ----------- ≤ 1400px: 大型笔电 / 小台式机 ----------- */
+
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
@@ -15,7 +15,7 @@
   }
 }
 
-/* ----------- ≤ 1200px: 平板或小笔电 ----------- */
+
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
@@ -84,7 +84,7 @@
   }
 }
 
-/* ----------- ≤ 600px: 手机端 ----------- */
+
 @media screen and (max-width: 600px) {
   #contact,
   footer {
@@ -187,4 +187,9 @@
     align-items: center;
     text-align: center;
   }
+}
+
+@media (min-width: 768px) {
+  #desktop-nav { display: flex; align-items: center; justify-content: space-between; }
+  #hamburger-nav { display: none; }
 }

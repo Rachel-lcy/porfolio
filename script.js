@@ -1,4 +1,26 @@
-/* web crypto API */
+
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('#nav-toggle');
+  const menu = document.querySelector('#hamburger-nav .menu-links');
+
+  if (toggle && menu) {
+    const toggleMenu = () => {
+      const isOpen = menu.dataset.state === 'open';
+      menu.dataset.state = isOpen ? 'closed' : 'open';
+      menu.setAttribute('aria-hidden', String(isOpen));
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+      document.body.classList.toggle('no-scroll', !isOpen);
+      toggle.classList.toggle('open', !isOpen);
+    };
+
+
+    toggle.addEventListener('click', toggleMenu);
+    menu.addEventListener('click', (e) => {
+      if (e.target.closest('a')) toggleMenu();
+    });
+  }
+});
+
 
 async function encryptMessage() {
   const message = document.getElementById("message").value;
@@ -90,7 +112,7 @@ if (SpeechRecognition) {
     }
   };
 
-  
+
 
   recognition.onerror = () => {
     instruction.textContent = '❗ Speech recognition error. Please try again.';
