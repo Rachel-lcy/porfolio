@@ -194,3 +194,15 @@
     display: none;
   }
 }
+
+@media (max-width: 480px) {
+  .secure-message textarea {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .secure-message button {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+  }
+}
