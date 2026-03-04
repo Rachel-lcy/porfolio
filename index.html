@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rachel Hu | Web Developer - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="mediaqueries.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rachel Hu | Cloud & AI Solutions Engineer</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 
 <body>
@@ -15,425 +16,439 @@
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#capabilities">Capabilities</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
-      <!-- <li><a href="https://nodejs-blog-c5o4.onrender.com/" target="_blank" rel="noopener">Blog</a></li> -->
     </ul>
   </nav>
 
-<!-- Mobile -->
+  <!-- Mobile -->
   <nav id="hamburger-nav">
-  <h1 class="logo">Rachel Hu</h1>
-  <button id="nav-toggle" class="hamburger-icon" type="button" aria-expanded="false" aria-label="Open menu">
-    <span></span><span></span><span></span>
-  </button>
+    <h1 class="logo">Rachel Hu</h1>
+    <button id="nav-toggle" class="hamburger-icon" type="button" aria-expanded="false" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
 
-  <ul class="menu-links" data-state="closed" aria-hidden="true">
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <!-- <li><a href="https://nodejs-blog-c5o4.onrender.com/" target="_blank" rel="noopener">Blog</a></li> -->
-  </ul>
+    <ul class="menu-links" data-state="closed" aria-hidden="true">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#capabilities">Capabilities</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/Circle-Rachel-pic.png" alt="Rachel Hu profile picture">
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1 rainbow-text">Hello, I'm</p>
-      <h1 class="title rainbow-text">Rachel Hu</h1>
-      <p class="section__text__p2 rainbow-text">Frontend Developer</p>
-      <p class="section__text__p2 rainbow-text">Data Analyst</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/RACHEL_HU_Resume_Design Version.pdf')">Download CV</button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-      </div>
-
-      <div class="socials-container" id="socials-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/'">
-
-        <img src="./assets/github.png" alt="GitHub profile" class="icon" onclick="location.href='https://github.com/Rachel-lcy'">
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
+  <!-- Hero -->
+  <section id="profile" class="section hero">
+    <div class="container hero-grid">
       <div class="section__pic-container">
-        <img src="./assets/rachel-1.png" alt="Profile picture" class="about-pic">
+        <img src="./assets/Circle-Rachel-pic.png" alt="Rachel Hu profile picture" />
       </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon">
-            <h3>Experience</h3>
-            <p>2+ years <br> Frontend Developer + Data Analysts</p>
+
+      <div class="section__text">
+        <p class="section__text__p1 rainbow-text">Hello, I'm</p>
+        <h1 class="title rainbow-text">Rachel Hu</h1>
+
+        <p class="section__text__p2 rainbow-text">Cloud & AI Solutions Engineer</p>
+        <p class="section__text__p3">
+          AWS • Generative AI • Cloud Architecture • Serverless Delivery • Full-Stack Systems
+        </p>
+
+        <p class="section__text__p4">
+          Building cloud-native applications that integrate GenAI into real workflows with secure deployment,
+          observable APIs, and explainable outputs.
+        </p>
+
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/RACHEL_HU_Resume_Design Version.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+
+        <div class="social-row" aria-label="Social links">
+          <a class="social-icon" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+            <img src="./assets/linkedin.png" alt="LinkedIn" />
+          </a>
+
+          <a class="social-icon" href="https://github.com/Rachel-lcy" target="_blank" rel="noopener">
+            <img src="./assets/github.png" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+
+      <div class="section-container about-grid">
+        <div class="section__pic-container">
+          <img src="./assets/rachel-1.png" alt="Profile picture" class="about-pic" />
+        </div>
+
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Focus</h3>
+              <p>Cloud Architecture <br /> + Generative AI Integration</p>
+            </div>
+
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>
+                SAIT <br />
+                Interactive Design – Web Design & Development
+              </p>
+            </div>
           </div>
 
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon">
-            <h3>Education</h3>
-            <p>Southern Alberta Institute of Technology <br> Interactive Design - Web Design and Development Major</p>
+          <div class="text-container">
+            <p>
+              Hi, I’m Rachel — a <b>Cloud & AI Solutions Engineer</b> with a background in full-stack web development and data analytics.<br /><br />
+              I build <b>cloud-native AI applications</b> that combine modern web technologies with scalable APIs, secure deployment, and explainable pipelines — turning GenAI into practical tools that support real business workflows.<br /><br />
+              I enjoy designing end-to-end systems: document ingestion, normalization, skill matching, scoring breakdown, and AI-generated insights — with an emphasis on <b>architecture clarity, reliability, and maintainability</b>.
+            </p>
           </div>
         </div>
-        <div class="text-container">
-          <p>
-            Hi, I’m Rachel — a Front-End Developer and Data Analyst who blends creative design with analytical thinking. I build responsive, accessible web applications using React, Next.js, Node.js, and MongoDB, while exploring how data and AI can support smarter, more personalized digital experiences.<br/><br/>
+      </div>
 
-            With a background in customer service and a strong foundation in web development, I bring empathy, logic, and attention to detail into every project. I’m currently deepening my skills in Python, SQL, data visualization, and machine learning, working toward a future where I can bridge front-end development with AI-driven, data-informed solutions.
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </div>
+  </section>
 
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers experience-grid">
+
+          <div class="details-container exp-card">
+            <h2 class="experience-sub-title">Cloud & AI Technologies</h2>
+
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>AWS Cloud</h3><p>Intermediate</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>AWS Bedrock</h3><p>Intermediate</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>AI Integration</h3><p>Intermediate</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>API Design</h3><p>Experienced</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Prompt Engineering</h3><p>Experienced</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Data Pipelines</h3><p>Intermediate</p></div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container exp-card">
+            <h2 class="experience-sub-title">Full-Stack Systems</h2>
+
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Next.js</h3><p>Experienced</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Node.js</h3><p>Intermediate</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Express.js</h3><p>Intermediate</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Python</h3><p>Intermediate</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>React</h3><p>Intermediate</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>MongoDB</h3><p>Intermediate</p></div>
+              </article>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#capabilities'" />
+    </div>
+  </section>
+
+  <!-- Capabilities -->
+  <section id="capabilities" class="section capabilities">
+    <div class="container">
+      <p class="section-kicker">What I Do Best</p>
+      <h2 class="section-title">Cloud & AI Capabilities</h2>
+
+      <div class="cap-grid">
+        <div class="cap-card">
+          <h3>Cloud Architecture Design</h3>
+          <p>Design cloud-native components, data flow, and service boundaries for scalable delivery.</p>
+        </div>
+
+        <div class="cap-card">
+          <h3>Generative AI Integration</h3>
+          <p>Integrate Bedrock-style model endpoints into production workflows with safe prompting patterns.</p>
+        </div>
+
+        <div class="cap-card">
+          <h3>API Engineering</h3>
+          <p>Build clean server-side API routes with predictable responses and maintainable contracts.</p>
+        </div>
+
+        <div class="cap-card">
+          <h3>Serverless Delivery</h3>
+          <p>Deploy fast, scalable apps using serverless patterns and production deployment practices.</p>
+        </div>
+
+        <div class="cap-card">
+          <h3>Explainable AI Systems</h3>
+          <p>Deliver transparent scoring, breakdowns, and rationale — avoiding black-box outputs.</p>
+        </div>
+
+        <div class="cap-card">
+          <h3>Security & Reliability</h3>
+          <p>Apply secure-by-default patterns (env secrets, auth guards) and build resilient flows with validation and error handling.</p>
+        </div>
+
+        <div class="cap-card cap-card--wide">
+          <h3>Data Processing Pipelines</h3>
+          <p>Build ingestion → normalization → extraction pipelines to support reliable AI evaluation and matching.</p>
+        </div>
+      </div>
+
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="section__text__p1">Cloud & AI Case Studies</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="projects-container">
+
+        <!-- AI Resume Analyzer -->
+        <div class="project-card">
+          <img src="./assets/AI Resume Analyzer.png" alt="AI Resume Analyzer Platform" class="project-img" />
+          <h2>AI Resume Analyzer Platform</h2>
+
+          <p class="project-description">
+            Cloud-native GenAI application that parses resumes, normalizes skills, and produces explainable match scoring with auditable breakdowns.
           </p>
-        </div>
-      </div>
-    </div>
 
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
-  </section>
+          <ul class="project-highlights">
+            <li><b>Architecture:</b> Next.js app + server-side API routes + Bedrock inference pipeline.</li>
+            <li><b>Reliability:</b> input validation, safe defaults, predictable JSON responses for UI.</li>
+            <li><b>Security:</b> secrets stored via environment variables; no client-side key exposure.</li>
+          </ul>
 
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>HTML</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>CSS</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>React.js</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Figma</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Material UI</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
+          <p class="tech-stack">
+            <b>Tools:</b> AWS Bedrock (Claude 3 Haiku), Next.js, React, Node.js API Routes, Tailwind CSS
+          </p>
+
+          <div class="project-actions">
+            <div class="btn-row">
+              <a class="btn btn-color-2" href="https://github.com/Rachel-lcy/pets-website" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="btn btn-color-2" href="https://pets-website-steel.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </div>
+
+            <a class="detail-btn" href="business-ai.html" target="_blank" rel="noopener noreferrer">Explore Business Insights</a>
           </div>
         </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Backend Development</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>PostgreSQL</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Node JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Express JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Python</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Next JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>MongoDB</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
+
+        <!-- Peak Pets -->
+        <div class="project-card">
+          <img src="./assets/peakpets.png" alt="Peak Pets Website" class="project-img" />
+          <h2>Peak Pets Website</h2>
+
+          <p class="project-description">
+            CMS-driven web platform designed for scalable deployment and fast content updates, with authentication-ready user flows.
+          </p>
+
+          <ul class="project-highlights">
+            <li><b>Performance:</b> Next.js SSR/SSG strategy for faster loading and better SEO.</li>
+            <li><b>Operations:</b> CMS-driven content updates without redeploying core UI components.</li>
+            <li><b>Deployment:</b> Vercel hosting with predictable build & release workflow.</li>
+          </ul>
+
+          <p class="tech-stack">
+            <b>Tools:</b> Next.js, React, Tailwind CSS, CMS, Clerk (Auth), Vercel
+          </p>
+
+          <div class="project-actions">
+            <div class="btn-row">
+              <a class="btn btn-color-2" href="https://github.com/Rachel-lcy/pets-website" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="btn btn-color-2" href="https://pets-website-steel.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </div>
+            <a class="detail-btn" href="business-peakpets.html" target="_blank" rel="noopener noreferrer">Explore Business Insights</a>
           </div>
         </div>
-      </div>
-    </div>
-    <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#projects'"
-    />
-  </section>
 
-  <section id="projects">
-  <p class="section__text__p1">Browse My Recent</p>
-  <h1 class="title">Projects</h1>
-  <img
-    src="./assets/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-    onclick="location.href='./#projects'"
-  />
-  <div class="projects-container">
+        <!-- Skills Tune Up -->
+        <div class="project-card">
+          <img src="./assets/skills-tune-up.png" alt="Skills Tune Up" class="project-img" />
+          <h2>Skills Tune Up</h2>
 
-    <!-- AI resume analyzer Website -->
-    <div class="project-card">
-      <img src="./assets/AI Resume Analyzer.png" alt="AI resume analyzer Website" class="project-img" />
-      <h2>AI Resume Analyzer Platform</h2>
-      <p class="project-description">End-to-end AI-powered cloud application for resume-job matching and explainable scoring.</p>
-      <p class="tech-stack"><b>Tools Used:</b> AWS Bedrock (Claude 3 Haiku), Next.js, React, Tailwind CSS</p>
-      <div class="btn-container">
-        <a class="btn btn-color-2" href="https://github.com/Rachel-lcy/pets-website" target="_blank" rel="noopener noreferrer">Github</a>
-        <a class="btn btn-color-2" href="https://pets-website-steel.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-      </div>
-      <a href="business-ai.html" target="_blank" rel="noopener noreferrer">
-        <button class="detail-btn">Explore Business Insights</button>
-      </a>
-    </div>
+          <p class="project-description">
+            Training platform concept optimized for scalable delivery — designed around modular pages, payment/auth integration, and clean deployment workflow.
+          </p>
 
-    <!-- Peak Pets Website -->
-    <div class="project-card">
-      <img src="./assets/peakpets.png" alt="Peak Pets" class="project-img" />
-      <h2>Peak Pets Website</h2>
-      <p class="project-description">Pets care service website providing in-home pets sitting,booking system and online store.</p>
-      <p class="tech-stack"><b>Tools Used:</b> React.js, Next.js, TailWindCSS, CMS</p>
-      <div class="btn-container">
-        <a class="btn btn-color-2" href="https://github.com/Rachel-lcy/pets-website" target="_blank" rel="noopener noreferrer">Github</a>
-        <a class="btn btn-color-2" href="https://pets-website-steel.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-      </div>
-      <a href="business-peakpets.html" target="_blank" rel="noopener noreferrer">
-        <button class="detail-btn">Explore Business Insights</button>
-      </a>
-    </div>
+          <ul class="project-highlights">
+            <li><b>Architecture:</b> componentized UI for maintainable scaling and feature iteration.</li>
+            <li><b>Security:</b> payment/auth integration patterns aligned with real-world app needs.</li>
+            <li><b>Deployability:</b> production-style build pipeline and hosting-ready structure.</li>
+          </ul>
 
-    <!-- Skills-Tune-Up Projects -->
-    <div class="project-card">
-      <img src="./assets/skills-tune-up.png" alt="Skills-Tune-Up Projects" class="project-img" />
-      <h2>Skills Tune Up Projects</h2>
-      <p class="project-description"> Skills Tune Up helps immigrants start new careers in Alberta as licensed
-      security guards, offering expert guidance, personalized support, and interactive training for certification success.</p>
-      <p class="tech-stack"><b>Tools Used:</b> React.js, Next.js, TailwindCSS, Stripe, Supabase</p>
-      <div class="btn-container">
-        <a class="btn btn-color-2" href="https://github.com/Rachel-lcy/skills-tune-up-project" target="_blank" rel="noopener noreferrer">Github</a>
-        <a class="btn btn-color-2" href="https://skills-tune-up-project.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-      </div>
-      <a href="business-skillsTuneUp.html" target="_blank" rel="noopener noreferrer">
-        <button class="detail-btn">Explore Business Insights</button>
-      </a>
-    </div>
+          <p class="tech-stack">
+            <b>Tools:</b> Next.js, React, Tailwind CSS, Stripe, Supabase
+          </p>
 
-    <!-- Latinos bakery Website -->
-    <div class="project-card">
-      <img src="./assets/latinos-bakery.png" alt="Travel Blog" class="project-img" />
-      <h2>Latinos Bakery Website</h2>
-      <p class="project-description">A vibrant, mobile-first site for a Colombian bakery that turns cravings into clicks.Full-bleed food imagery, a persuasive hero, and a clean, accessible UI move visitors from story to menu in seconds.</p>
-      <p class="tech-stack"><b>Tools Used:</b>Next.js, React.js, TailwindCSS, Stripe, Supabase, Api integration, CMS</p>
-      <div class="btn-container">
-        <a class="btn btn-color-2" href="https://github.com/Rachel-lcy/latinos-bakery-app" target="_blank" rel="noopener noreferrer">Github</a>
-        <a class="btn btn-color-2" href="https://latinos-bakery-app.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-      </div>
-      <a href="business-latinos-bakery.html" target="_blank" rel="noopener noreferrer">
-        <button class="detail-btn">Explore Business Insights</button>
-      </a>
-    </div>
-
-    <!-- Restaurant Website -->
-    <div class="project-card">
-      <img src="./assets/littlelemonrestaurant.png" alt="Restaurant Website" class="project-img" />
-      <h2>Restaurant Website</h2>
-      <p class="project-description">An online menu website for Little Lemon Restaurant. Includes reservation feature and interactive UI.</p>
-      <p class="tech-stack"><b>Tools Used:</b> React.js, HTML, JS, CSS, Figma, Clerk</p>
-      <div class="btn-container">
-        <a class="btn btn-color-2" href="https://github.com/Rachel-lcy/Little-Lemon-Restaurant" target="_blank" rel="noopener noreferrer">Github</a>
-        <a class="btn btn-color-2" href="https://react-restaurant-project-o57q7xce3-rachels-projects-96310063.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-      </div>
-      <a href="business-lemonmenu.html" target="_blank" rel="noopener noreferrer">
-        <button class="detail-btn">Explore Business Insights</button>
-      </a>
-    </div>
-
-    <!-- Rachel's Digital Blog -->
-    <div class="project-card">
-      <img src="./assets/Rachel's blog.png" alt="Rachel's blog" class="project-img" />
-      <h2>Rachel's Digital Blog</h2>
-      <p class="project-description">Discover tech tutorials, coding projects, and creative ideas.
-      I share my journey as a web developer, along with practical tips and insights about coding, design, and digital life.</p>
-      <p class="tech-stack"><b>Tools Used:</b> Node.js, Express.js, MongoDB, EJS</p>
-      <div class="btn-container">
-        <a class="btn btn-color-2" href="https://github.com/Rachel-lcy/nodejs-blog" target="_blank" rel="noopener noreferrer">Github</a>
-        <a class="btn btn-color-2" href="https://nodejs-blog-c5o4.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-      </div>
-      <a href="business-digitalblog.html" target="_blank" rel="noopener noreferrer">
-        <button class="detail-btn">Explore Business Insights</button>
-      </a>
-    </div>
-
-
-
-    <!-- Floatin Social Application -->
-    <div class="project-card">
-      <img src="./assets/floatin-application.png" alt="Floatin Social Application" class="project-img" />
-      <h2>Floatin Social Application</h2>
-      <p class="project-description"> A Calgary-based social app that sparks real connections through fun icebreakers, personality matching, and local events.</p>
-      <p class="tech-stack"><b>Tools Used:</b> HTML, CSS, JS,Clerk, builder.io, Vercel</p>
-      <div class="btn-container">
-        <a class="btn btn-color-2" href="https://github.com/Rachel-lcy/floatin-social-app" target="_blank" rel="noopener noreferrer">Github</a>
-        <a class="btn btn-color-2" href="https://floatin-social-app.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-      </div>
-      <a href="business-floatin-app.html" target="_blank" rel="noopener noreferrer">
-        <button class="detail-btn">Explore Business Insights</button>
-      </a>
-    </div>
-
-  </div>
-  </section>
-
- <!-- Blog Section-->
-
-
-
-  <!-- <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img
-          src="./assets/email.png"
-          alt="Email icon"
-          class="icon contact-icon email-icon"
-        />
-        <p><a href="mailto:examplemail@gmail.com">hurui.lcy@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img
-          src="./assets/linkedin.png"
-          alt="LinkedIn icon"
-          class="icon contact-icon"
-        />
-        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-      </div>
-    </div>
-  </section> -->
-  <!-- Encrypted Contact Me -->
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-
-    <div class="contact-container">
-
-      <div class="contact-info">
-        <div class="contact-item">
-          <img src="./assets/email.png" class="icon contact-icon" />
-          <p><a href="https://mail.google.com/mail/u/0/#inbox">hurui.lcy@gmail.com</a></p>
+          <div class="project-actions">
+            <div class="btn-row">
+              <a class="btn btn-color-2" href="https://github.com/Rachel-lcy/skills-tune-up-project" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="btn btn-color-2" href="https://skills-tune-up-project.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </div>
+            <a class="detail-btn" href="business-skillsTuneUp.html" target="_blank" rel="noopener noreferrer">Explore Business Insights</a>
+          </div>
         </div>
-        <div class="contact-item">
-          <img src="./assets/linkedin.png" class="icon contact-icon" />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+
+        <!-- Latinos Bakery -->
+        <div class="project-card">
+          <img src="./assets/latinos-bakery.png" alt="Latinos Bakery" class="project-img" />
+          <h2>Latinos Bakery</h2>
+
+          <p class="project-description">
+            E-commerce-style experience focused on performance, deployment readiness, and content scalability via CMS + API integration.
+          </p>
+
+          <ul class="project-highlights">
+            <li><b>Performance:</b> mobile-first UI patterns and optimized page layout for speed.</li>
+            <li><b>Scalability:</b> CMS + API integration for dynamic content delivery.</li>
+            <li><b>Deployment:</b> production hosting and release workflow aligned with SaaS-style delivery.</li>
+          </ul>
+
+          <p class="tech-stack">
+            <b>Tools:</b> Next.js, React, Tailwind CSS, CMS, API Integration, Stripe, Supabase
+          </p>
+
+          <div class="project-actions">
+            <div class="btn-row">
+              <a class="btn btn-color-2" href="https://github.com/Rachel-lcy/latinos-bakery-app" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="btn btn-color-2" href="https://latinos-bakery-app.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </div>
+            <a class="detail-btn" href="business-latinos-bakery.html" target="_blank" rel="noopener noreferrer">Explore Business Insights</a>
+          </div>
+        </div>
+
+        <!-- Floatin -->
+        <div class="project-card hidden-project">
+          <img src="./assets/floatin-application.png" alt="Floatin Social App" class="project-img" />
+          <h2>Floatin Social Application</h2>
+
+          <p class="project-description">
+            App concept built with authentication-ready architecture and deployment-oriented structure, designed for responsive UX delivery.
+          </p>
+
+          <ul class="project-highlights">
+            <li><b>Deployment:</b> hosting-ready build structure and environment-based config patterns.</li>
+            <li><b>Security:</b> auth integration concept aligned with real app needs.</li>
+            <li><b>UX:</b> responsive layout designed for multi-device behavior.</li>
+          </ul>
+
+          <p class="tech-stack">
+            <b>Tools:</b> HTML, CSS, JS, Clerk, builder.io, Vercel
+          </p>
+
+          <div class="project-actions">
+            <div class="btn-row">
+              <a class="btn btn-color-2" href="https://github.com/Rachel-lcy/floatin-social-app" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="btn btn-color-2" href="https://floatin-social-app.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </div>
+            <a class="detail-btn" href="business-floatin-app.html" target="_blank" rel="noopener noreferrer">Explore Business Insights</a>
+          </div>
+        </div>
+        <div class="load-more-container">
+          <button id="load-more-btn">View More Projects →</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <img src="./assets/email.png" class="icon contact-icon" alt="Email" />
+            <p><a href="mailto:hurui.lcy@gmail.com">hurui.lcy@gmail.com</a></p>
+          </div>
+          <div class="contact-item">
+            <img src="./assets/linkedin.png" class="icon contact-icon" alt="LinkedIn" />
+            <p><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></p>
+          </div>
+        </div>
+
+        <div class="secure-message">
+          <h3>💬 Leave a Secure Message</h3>
+          <textarea id="message" placeholder="Type your message here..."></textarea>
+          <button class="btn btn-color-1" onclick="encryptMessage()">Encrypt Message</button>
+          <p id="encrypted-result"></p>
         </div>
       </div>
-
-      <div class="secure-message">
-        <h3>💬 Leave a Secure Message</h3>
-        <textarea id="message" placeholder="Type your message here..."></textarea>
-        <button class="btn btn-color-1" onclick="encryptMessage()">Encrypt Message</button>
-        <p id="encrypted-result"></p>
-      </div>
     </div>
   </section>
 
-  <!--Web Speech API-->
+  <!-- Web Speech API -->
   <div id="mic-container">
     <button id="mic-btn">🎙️ Voice Control</button>
-    <p id="mic-instruction">Say "Go to projects", "blog" or "contact" etc.</p>
+    <p id="mic-instruction">Say "Go to projects", "capabilities", "contact", or "open resume".</p>
     <p id="mic-result"></p>
   </div>
-
 
   <footer>
     <nav>
@@ -441,14 +456,15 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#capabilities">Capabilities</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <!-- <li><a href="#blog">Blog</a></li> -->
         </ul>
       </div>
     </nav>
     <p>Copyright &#169; 2025 Rachel Hu. All Rights Reserved.</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
