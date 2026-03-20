@@ -415,6 +415,51 @@ article p { margin: 0; opacity: 0.7; font-size: 0.9rem; }
   transform:scale(0.97);
 }
 
+/* Case Study */
+.case-study-card {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 28px;
+  padding: 2rem;
+}
+
+.case-study-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+.case-item {
+  background-color: #fafafa;
+  border: 1px solid #ececec;
+  border-radius: 22px;
+  padding: 1.4rem;
+}
+
+.case-item h4 {
+  margin-bottom: 0.7rem;
+  font-size: 1.15rem;
+}
+
+.case-item p,
+.case-item li {
+  color: #333;
+}
+
+.case-item ul {
+  padding-left: 1.2rem;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+
 /* =========================
    Contact Section Fix
 ========================= */
