@@ -729,7 +729,7 @@
   <section id="case-study" class="section light-section">
     <div class="container">
       <p class="section-label">Troubleshooting in Practice</p>
-      <h2 class="section-title">Real Issues I Solved (IT Support &amp; QA)</h2>
+      <h2 class="section-title">Real Issues I Solved (IT Support &amp; QA Perspective)</h2>
 
       <!-- CASE 1 -->
       <div class="case-block">
@@ -767,7 +767,7 @@
 
             <ol class="step-list">
               <li>Verified Bedrock client initialization — confirmed SDK was loading without errors</li>
-              <li>Reviewed .env.local — values appeared correct at a glance</li>
+              <li>Reviewed .env.local — modelId value appeared correct visually, no obvious errors</li>
               <li>Added runtime logging to capture <strong>region</strong> and <strong>modelId</strong> at request time</li>
               <li>Compared logged values against expected Bedrock model ID — <strong>mismatch detected</strong></li>
               <li>Identified trailing whitespace in env variable as likely cause</li>
@@ -803,7 +803,25 @@
           </article>
 
           <article class="case-card full-width">
-            <p class="case-card-label purple">CARD 5 — KEY LESSONS</p>
+            <p class="case-card-label purple">CARD 5 — QA TESTING</p>
+            <h3>Verification & regression validation</h3>
+
+            <ul>
+              <li>Validated Bedrock API returned successful responses after config fix</li>
+              <li>Tested multiple resume inputs to confirm stable AI output generation</li>
+              <li>Verified fallback (rule-based analysis) still works when AI is unavailable</li>
+              <li>Tested both local and production environments for consistency</li>
+              <li>Confirmed no regression in API routes or scoring logic</li>
+            </ul>
+
+            <p>
+              Ensured the issue was fully resolved and did not reappear across environments,
+              demonstrating a QA-focused validation approach beyond simple bug fixing.
+            </p>
+          </article>
+
+          <article class="case-card full-width">
+            <p class="case-card-label purple">CARD 6 — KEY LESSONS</p>
             <h3>Many “AI bugs” are actually configuration bugs</h3>
             <p>
               This incident reinforced that silent failures at the cloud API layer often have
@@ -897,9 +915,26 @@
               <li>Confirmed resume analysis was restored successfully</li>
             </ol>
           </article>
+          <article class="case-card full-width">
+            <p class="case-card-label purple">CARD 5 — QA TESTING</p>
+            <h3>Production Verification & regression validation</h3>
+
+            <ul>
+              <li>Executed end-to-end testing for PDF upload, parsing, and resume analysis</li>
+              <li>Verified the fix specifically resolved the production-only failure</li>
+              <li>Confirmed expected behavior remained stable in localhost and Vercel</li>
+              <li>Validated the new parsing dependency was compatible with server runtime requirements</li>
+              <li>Checked for regression in adjacent upload and analysis workflows</li>
+            </ul>
+
+            <p>
+              This testing phase ensured the issue was not only fixed, but also validated against
+              runtime compatibility risks and regression scenarios.
+            </p>
+          </article>
 
           <article class="case-card full-width">
-            <p class="case-card-label purple">CARD 5 — KEY LESSONS</p>
+            <p class="case-card-label purple">CARD 6 — KEY LESSONS</p>
             <h3>“Works on my machine” is not root cause analysis</h3>
             <p>
               This case reinforced a critical support principle: when an issue appears only
