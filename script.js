@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // ---------------------------
-  // Mobile nav toggle
-  // ---------------------------
+  /* =========================
+     MOBILE NAV
+  ========================= */
   const toggle = document.querySelector("#nav-toggle");
   const menu = document.querySelector(".menu-links");
 
@@ -22,19 +22,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ---------------------------
-  // Web Speech API (Voice Control)
-  // ---------------------------
+  /* =========================
+     VOICE CONTROL
+  ========================= */
   const micBtn = document.getElementById("mic-btn");
   const instruction = document.getElementById("mic-instruction");
   const result = document.getElementById("mic-result");
-
   const SpeechRecognition =
     window.SpeechRecognition || window.webkitSpeechRecognition;
 
-  if (!micBtn || !instruction || !result) return;
-
-  if (SpeechRecognition) {
+  if (micBtn && instruction && result && SpeechRecognition) {
     const recognition = new SpeechRecognition();
     recognition.lang = "en-US";
 
@@ -48,14 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const transcript = event.results[0][0].transcript.toLowerCase();
       result.textContent = `You said: "${transcript}"`;
 
-      // Reset UI after 2 seconds
       setTimeout(() => {
         instruction.textContent =
           'Say: "Go to Projects", "Capabilities", "Contact", "About", "Experience", or "Open Resume"';
         result.textContent = "";
       }, 2000);
 
-      // Commands
       if (transcript.includes("project")) {
         document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" });
       } else if (transcript.includes("capabil") || transcript.includes("skills")) {
@@ -85,15 +80,57 @@ document.addEventListener("DOMContentLoaded", () => {
     recognition.onerror = () => {
       instruction.textContent = "❗ Speech recognition error. Please try again.";
     };
-  } else {
+  } else if (micBtn && instruction && result && !SpeechRecognition) {
     micBtn.disabled = true;
     instruction.textContent = "❗ Your browser does not support Web Speech API";
   }
+
+  /* =========================
+     LOAD MORE PROJECTS
+  ========================= */
+  const loadMoreProjectsBtn = document.getElementById("load-more-projects-btn");
+
+  if (loadMoreProjectsBtn) {
+    loadMoreProjectsBtn.addEventListener("click", () => {
+      const hiddenProjects = document.querySelectorAll(".hidden-project");
+      let shouldShow = false;
+
+      hiddenProjects.forEach((project) => {
+        if (!project.classList.contains("show")) {
+          shouldShow = true;
+        }
+      });
+
+      hiddenProjects.forEach((project) => {
+        project.classList.toggle("show", shouldShow);
+      });
+
+      loadMoreProjectsBtn.textContent = shouldShow
+        ? "View Less Projects ↑"
+        : "View More Projects →";
+    });
+  }
+
+  /* =========================
+     LOAD MORE CASES
+  ========================= */
+  const loadMoreCasesBtn = document.getElementById("load-more-cases-btn");
+  const secondCase = document.getElementById("case-dommatrix");
+
+  if (loadMoreCasesBtn && secondCase) {
+    loadMoreCasesBtn.addEventListener("click", () => {
+      secondCase.classList.toggle("show");
+
+      loadMoreCasesBtn.textContent = secondCase.classList.contains("show")
+        ? "View Less Cases ↑"
+        : "View More Cases →";
+    });
+  }
 });
 
-// ---------------------------
-// Encrypt message (AES-GCM demo)
-// ---------------------------
+/* =========================
+   AES ENCRYPTION DEMO
+========================= */
 async function encryptMessage() {
   const message = document.getElementById("message")?.value || "";
   const output = document.getElementById("encrypted-result");
@@ -113,7 +150,11 @@ async function encryptMessage() {
   );
 
   const iv = crypto.getRandomValues(new Uint8Array(12));
-  const encrypted = await crypto.subtle.encrypt({ name: "AES-GCM", iv }, key, data);
+  const encrypted = await crypto.subtle.encrypt(
+    { name: "AES-GCM", iv },
+    key,
+    data
+  );
 
   function arrayBufferToBase64(buffer) {
     let binary = "";
@@ -127,23 +168,4 @@ async function encryptMessage() {
   if (output) {
     output.innerText = "🔐 Encrypted Message: " + encryptedBase64;
   }
-}
-
-/* Load More Projects */
-
-const loadMoreBtn = document.getElementById("load-more-btn");
-
-if(loadMoreBtn){
-
-  loadMoreBtn.addEventListener("click", () => {
-
-    const hiddenProjects = document.querySelectorAll(".hidden-project");
-
-    hiddenProjects.forEach(project=>{
-      project.style.display = "flex";
-    });
-
-    loadMoreBtn.style.display = "none";
-  });
-
 }
