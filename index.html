@@ -745,7 +745,7 @@
             <p class="case-card-label blue">CARD 1 — PROBLEM</p>
             <h3>AI analysis feature blocked at runtime</h3>
             <p>
-              The application threw <strong>"The provided model identifier is invalid"</strong>
+              The application threw <strong>"[bedrock] failed: The provided model identifier is invalid."</strong>
               when calling AWS Bedrock during resume analysis. AI-generated insights were
               completely unavailable, while the rule-based scoring layer continued to
               function normally — confirming the issue was isolated to the Bedrock
@@ -796,7 +796,7 @@
             <ol class="step-list">
               <li>Corrected the <strong>modelId</strong> value in <strong>.env.local</strong></li>
               <li>Applied <strong>.trim()</strong> to all env variable reads to prevent recurrence</li>
-              <li>Improved startup logging to print sanitized config values on boot</li>
+              <li>Improved startup logging to print sanitized config values</li>
               <li>Restarted the app and confirmed Bedrock API returned successful responses</li>
               <li>Verified AI analysis output matched expected behavior end-to-end</li>
             </ol>
@@ -996,7 +996,7 @@
   <!-- Web Speech API -->
   <div id="mic-container">
     <button id="mic-btn">🎙️ Voice Control</button>
-    <p id="mic-instruction">Say "Go to projects", "skills", "contact", or "open resume".</p>
+    <p id="mic-instruction">Say "Go to projects", "skills","Case Study" ,"contact", or "open resume".</p>
     <p id="mic-result"></p>
   </div>
 

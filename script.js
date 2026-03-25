@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       setTimeout(() => {
         instruction.textContent =
-          'Say: "Go to Projects", "Capabilities", "Contact", "About", "Experience", or "Open Resume"';
+          'Say: "Go to Projects", "Skills", "Contact", "About", "Case Study", or "Open Resume"';
         result.textContent = "";
       }, 2000);
 
@@ -57,8 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("#capabilities")?.scrollIntoView({ behavior: "smooth" });
       } else if (transcript.includes("contact")) {
         document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
-      } else if (transcript.includes("experience")) {
-        document.querySelector("#experience")?.scrollIntoView({ behavior: "smooth" });
+      } else if (transcript.includes("case")) {
+        document.querySelector("#Case Study")?.scrollIntoView({ behavior: "smooth" });
       } else if (transcript.includes("about")) {
         document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" });
       } else if (transcript.includes("top") || transcript.includes("home")) {
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
       } else if (transcript.includes("blog")) {
         window.open("https://nodejs-blog-c5o4.onrender.com/", "_blank");
       } else if (transcript.includes("resume") || transcript.includes("cv")) {
-        window.open("./assets/RACHEL_HU_Resume_Design Version.pdf", "_blank");
+        window.open("./assets/Rachel_IT_Support_FINAL.pdf", "_blank");
       } else if (transcript.includes("ai resume") || transcript.includes("resume analyzer")) {
         window.open("business-ai.html", "_blank");
       } else if (transcript.includes("peak pets") || transcript.includes("pet")) {
