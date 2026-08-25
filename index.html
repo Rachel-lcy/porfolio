@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -94,7 +94,7 @@
                 Application Support Resume
               </a> -->
 
-              <a href="./assets/Rui_Hu_IT_Support_Resume.pdf" target="_blank">
+              <a href="./assets/Rachel_Hu_IT_Support_Resume.pdf" target="_blank">
                 IT Support Resume
               </a>
             </div>
@@ -983,6 +983,279 @@
       <!-- CASE 1 -->
       <div class="case-block">
         <h3 class="case-main-title">
+          User Login & Active Directory Troubleshooting
+        </h3>
+        <p class="case-subtitle">
+          Windows Server · Active Directory · Account Access Incident
+        </p>
+
+      <div class="project-meta">
+        <div class="meta-row">
+          <strong>Type:</strong>
+          <span>User Support Incident </span>
+        </div>
+        <div class="meta-row">
+          <strong>Severity:</strong>
+          <span>Medium (User unable to work)</span>
+        </div>
+        <div class="meta-row">
+          <strong>Focus:</strong>
+          <span class="meta-pill">Active Directory</span>
+          <span class="meta-pill">Authentication</span>
+          <span class="meta-pill">Account Management</span>
+        </div>
+      </div>
+
+        <div class="case-study-layout">
+          <article class="case-card">
+            <p class="case-card-label blue">CARD 1 — PROBLEM</p>
+            <h3>User unable to sign in after password reset</h3>
+            <p>
+              A user reported being unable to sign in to their Windows workstation after a password reset. Multiple login attempts failed, preventing access to the domain account and company resources.
+
+              The goal was to determine whether the issue was caused by an incorrect password, account lockout, workstation connectivity, or Active Directory configuration.
+            </p>
+
+            <div class="divider"></div>
+
+            <div class="pill-group">
+              <span class="pill pill-red">Login failure</span>
+              <span class="pill pill-orange">User blocked</span>
+              <span class="pill pill-green">AD authentication</span>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <p class="case-card-label blue">CARD 2 — INVESTIGATION</p>
+            <h3>Structured account and authentication troubleshooting</h3>
+
+            <ol class="step-list">
+              <li>Confirmed the username and domain being used at sign-in</li>
+              <li>Verified the workstation had network connectivity to the domain environment</li>
+              <li>Checked the user account in <strong>Active Directory Users and Computers</strong> </li>
+              <li>Reviewed account status and identified the account was <strong>locked</strong></li>
+              <li>Confirmed the password had recently been reset and checked for expired or disabled account settings</li>
+              <li>Unlocked the account and verified the user was using the new password</li>
+            </ol>
+          </article>
+
+          <article class="case-card">
+            <p class="case-card-label orange">CARD 3 — ROOT CAUSE</p>
+            <h3>Account lockout caused by repeated authentication attempts</h3>
+            <p>
+              The Active Directory account had been locked after multiple unsuccessful sign-in attempts using the previous password.
+
+            </p>
+
+            <p class="root-note">
+              The workstation and domain services were operating normally. The issue was isolated to the user's authentication state rather than a network or system failure.
+            </p>
+          </article>
+
+          <article class="case-card">
+            <p class="case-card-label green">CARD 4 — SOLUTION</p>
+            <h3>Restored user account access</h3>
+
+            <ol class="step-list">
+              <li>Unlocked the user account in Active Directory</li>
+              <li>Confirmed the account was enabled and not expired</li>
+              <li>Verified the password reset was completed successfully</li>
+              <li>Had the user sign in with the updated credentials</li>
+              <li>Confirmed access to the Windows workstation and domain resources</li>
+            </ol>
+          </article>
+
+          <article class="case-card full-width">
+            <p class="case-card-label purple">CARD 5 — PRODUCTION VALIDATION & SERVICE VERIFICATION</p>
+            <h3>Verified access after resolution</h3>
+
+            <ul>
+              <li>Confirmed successful Windows domain login</li>
+              <li>Verified the account remained unlocked after repeated authentication</li>
+              <li>Tested access to domain resources</li>
+              <li>Confirmed basic network connectivity remained normal</li>
+              <li>Documented the issue, root cause, and resolution</li>
+            </ul>
+
+            <p>
+              The incident was closed only after confirming that the user could successfully return to normal work.
+            </p>
+          </article>
+
+          <article class="case-card full-width">
+            <p class="case-card-label purple">CARD 6 — KEY LESSONS</p>
+            <h3>Start with the user, then isolate the layer</h3>
+            <p>
+              A login failure does not automatically mean the password is incorrect. Account lockouts, expired credentials, network connectivity, domain availability, and cached credentials can produce similar symptoms.<br />
+
+              A structured troubleshooting process helps isolate the problem before making unnecessary system changes.
+            </p>
+
+            <div class="pill-group lessons-pills">
+              <span class="pill pill-blue">Active Directory</span>
+              <span class="pill pill-lightblue">Account Lockout</span>
+              <span class="pill pill-teal">Authentication</span>
+              <span class="pill pill-green">User Support</span>
+              <span class="pill pill-orange">Incident Resolution</span>
+            </div>
+
+            <div class="lesson-callout">
+              <strong>Why this matters for IT Support:</strong> This case demonstrates a common Service Desk responsibility — diagnosing authentication problems, managing Active Directory accounts, restoring user access, and validating service recovery.
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- CASE 2 -->
+      <div class="case-block hidden-case" id="case-dommatrix">
+        <h3 class="case-main-title">
+          Network Connectivity & DNS Troubleshooting
+        </h3>
+        <p class="case-subtitle">
+          Windows 11 · DNS · DHCP · TCP/IP · Windows Server
+        </p>
+
+      <div class="project-meta">
+        <div class="meta-row">
+          <strong>Type:</strong>
+          <span>User Connectivity Incident </span>
+        </div>
+        <div class="meta-row">
+          <strong>Severity:</strong>
+          <span>Medium (Business resources unavailable)</span>
+        </div>
+        <div class="meta-row">
+          <strong>Focus:</strong>
+          <span class="meta-pill">Networking</span>
+          <span class="meta-pill">DNS</span>
+          <span class="meta-pill">DHCP</span>
+          <span class="meta-pill">Client Troubleshooting</span>
+        </div>
+      </div>
+
+        <div class="case-study-layout">
+          <article class="case-card">
+            <p class="case-card-label blue">CARD 1 — PROBLEM</p>
+            <h3>User connected to network but unable to access internal resources</h3>
+            <p>
+              A Windows workstation appeared connected to the network, but the user could not access an internal server by hostname.<br />
+
+              Other network functions were available, suggesting that the problem was not a complete network outage.<br />
+
+              The goal was to determine whether the failure was related to the workstation, IP configuration, DNS, DHCP, or the destination server.
+            </p>
+
+            <div class="divider"></div>
+
+            <div class="pill-group">
+              <span class="pill pill-red">Resource unavailable</span>
+              <span class="pill pill-orange">Network troubleshooting</span>
+              <span class="pill pill-green">User impact</span>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <p class="case-card-label blue">CARD 2 — INVESTIGATION</p>
+            <h3>Troubleshooting from physical connectivity to name resolution</h3>
+
+            <ol class="step-list">
+              <li>Verified the workstation's network connection</li>
+              <li>Used <strong>ipconfig /all</strong>  to review IP address, subnet mask, default gateway, and DNS configuration</li>
+              <li>Used <strong>ping</strong> to test connectivity to the default gateway</li>
+              <li>Tested connectivity to the server using its IP address</li>
+              <li>Attempted to access the same server using its hostname</li>
+              <li>Used <strong>nslookup</strong> to test DNS name resolution</li>
+              <li>Identified that network connectivity worked, but hostname resolution failed</li>
+            </ol>
+          </article>
+
+          <article class="case-card">
+            <p class="case-card-label orange">CARD 3 — ROOT CAUSE</p>
+            <h3>Incorrect DNS configuration on the client</h3>
+            <p>
+              The workstation had valid network connectivity and could communicate with the destination server by IP address.<br />
+
+              However, the client was using an incorrect DNS configuration and could not resolve the internal server hostname.
+            </p>
+
+            <p class="root-note">
+              This isolated the problem to the <strong>DNS layer rather than general network connectivity.</strong>
+            </p>
+          </article>
+
+          <article class="case-card">
+            <p class="case-card-label green">CARD 4 — SOLUTION</p>
+            <h3>Corrected DNS configuration and restored access</h3>
+
+            <ol class="step-list">
+              <li>Corrected the DNS server configuration on the workstation</li>
+              <li>Renewed the client network configuration</li>
+              <li>Ran <strong>ipconfig /flushdns</strong> to clear cached DNS records</li>
+              <li>Used <strong>nslookup</strong> to confirm hostname resolution</li>
+              <li>Retested access to the internal server using its hostname</li>
+            </ol>
+            <p class="root-note">
+              Access was successfully restored.
+            </p>
+          </article>
+          <article class="case-card full-width">
+            <p class="case-card-label purple">CARD 5 — PRODUCTION VALIDATION & SERVICE VERIFICATION</p>
+            <h3>Confirmed network and DNS functionality</h3>
+
+            <ul>
+              <li>Verified the workstation received the expected IP configuration</li>
+              <li>Confirmed connectivity to the default gateway</li>
+              <li>Confirmed the destination server responded by IP address</li>
+              <li>Verified DNS successfully resolved the server hostname</li>
+              <li>Confirmed the user could access the required resource normally</li>
+              <li>Documented troubleshooting steps and resolution</li>
+            </ul>
+
+            <p>
+              The issue was considered resolved only after both network connectivity and application access were verified.
+            </p>
+          </article>
+
+          <article class="case-card full-width">
+            <p class="case-card-label purple">CARD 6 — KEY LESSONS</p>
+            <h3>“The network is down” does not always mean the network is down</h3>
+            <p>
+              Users often describe DNS, authentication, application, and connectivity problems simply as “the Internet isn't working.” <br />
+
+              Testing each layer individually — IP configuration, gateway connectivity, destination connectivity, and DNS resolution — makes it possible to identify the actual point of failure quickly.
+            </p>
+
+            <div class="pill-group lessons-pills">
+              <span class="pill pill-blue">TCP/IP</span>
+              <span class="pill pill-lightblue">DNS</span>
+              <span class="pill pill-teal">DHCP</span>
+              <span class="pill pill-green">ipconfig</span>
+              <span class="pill pill-orange">ping</span>
+              <span class="pill pill-orange">nslookup</span>
+              <span class="pill pill-orange">Structured Troubleshooting</span>
+            </div>
+
+            <div class="lesson-callout">
+              <strong>Why this matters for IT Support:</strong> This case demonstrates a fundamental Service Desk skill — translating a user's broad connectivity complaint into structured technical tests, isolating the failing layer, restoring access, and verifying the resolution.
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="load-more-container">
+        <button id="load-more-cases-btn" type="button">View More Cases →</button>
+      </div>
+    </div>
+  </section>
+
+    <!-- <section id="case-study" class="section light-section">
+    <div class="container">
+      <p class="section-label">Troubleshooting in Practice</p>
+      <h2 class="section-title">Technical Troubleshooting Case Studies</h2>
+
+      <!-- CASE 1 -->
+      <!-- <div class="case-block">
+        <h3 class="case-main-title">
           Cloud API Configuration Troubleshooting:
         </h3>
         <p class="case-subtitle">
@@ -1112,10 +1385,10 @@
             </div>
           </article>
         </div>
-      </div>
+      </div> -->
 
       <!-- CASE 2 -->
-      <div class="case-block hidden-case" id="case-dommatrix">
+      <!-- <div class="case-block hidden-case" id="case-dommatrix">
         <h3 class="case-main-title">
           Production Deployment Troubleshooting: DOMMatrix Runtime Error
         </h3>
@@ -1238,13 +1511,13 @@
             </div>
           </article>
         </div>
-      </div>
+      </div> -->
 
-      <div class="load-more-container">
+      <!-- <div class="load-more-container">
         <button id="load-more-cases-btn" type="button">View More Cases →</button>
       </div>
-    </div>
-  </section>
+     </div>
+   </section> --> -->
 
   <!-- Contact -->
   <section id="contact" class="section">
@@ -1331,7 +1604,7 @@
                 Application Support Resume
               </a> -->
 
-              <a href="./assets/Rui_Hu_IT_Support_Resume.pdf" target="_blank">
+              <a href="./assets/Rachel_Hu_IT_Support_Resume.pdf" target="_blank">
                 IT Support Resume
               </a>
 
